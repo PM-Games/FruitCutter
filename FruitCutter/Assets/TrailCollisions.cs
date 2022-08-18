@@ -24,14 +24,15 @@ public class TrailCollisions : MonoBehaviour
     void SetEdgeCollider(LineRenderer lineRenderer)
     {
         Transform lineTransform = lineRenderer.transform;
+        Debug.Log(lineTransform);
         List<Vector2> edges = new List<Vector2>();
 
         for (int point = 0; point < lineRenderer.positionCount; point++)
         {
             Vector3 lineRendererPoint = lineRenderer.GetPosition(point);
-            edges.Add(new Vector2(lineRendererPoint.x + lineTransform.position.x, lineRendererPoint.y + lineTransform.position.y));
+            edges.Add(new Vector3(lineRendererPoint.x + lineTransform.localPosition.x, lineRendererPoint.y + lineTransform.localPosition.y, lineRendererPoint.z + lineTransform.localPosition.z));
         }
 
         edgeCollider.SetPoints(edges);
-    }
+    }    
 }
