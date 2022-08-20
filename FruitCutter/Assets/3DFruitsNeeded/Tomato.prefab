@@ -98,6 +98,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 292237ffd3dc1444c828be3c90e1d862, type: 3}
   m_PrefabInstance: {fileID: 1368760181489907761}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1918669702170410680
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368760181489811089}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5, z: 0.5}
+  m_Center: {x: -0.000000014901161, y: -0.000000007450581, z: 0}
 --- !u!114 &396294173503507400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,16 +125,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fruitSliceParticleSystem: {fileID: 8269044994159673800, guid: 6d2857fdecd157f42ac23f1fe7e23f19, type: 3}
   colorOfFruit: Red
---- !u!65 &1918669702170410680
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1368760181489811089}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5, z: 0.5}
-  m_Center: {x: -0.000000014901161, y: -0.000000007450581, z: 0}
+  MyShake: {fileID: 11400000, guid: 42477bfe4d5362047955aa766729ddb8, type: 2}

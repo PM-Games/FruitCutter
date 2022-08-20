@@ -124,7 +124,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fruitSliceParticleSystem: {fileID: 8269044994159673800, guid: 6d2857fdecd157f42ac23f1fe7e23f19, type: 3}
-  fruitSliceBigSmoke: {fileID: 0}
-  fruitSliceGlowSmoke: {fileID: 0}
-  fruitSliceEmberTrail: {fileID: 0}
   colorOfFruit: Red
+  MyShake: {fileID: 11400000, guid: 42477bfe4d5362047955aa766729ddb8, type: 2}

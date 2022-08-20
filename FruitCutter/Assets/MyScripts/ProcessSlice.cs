@@ -25,6 +25,7 @@ public class ProcessSlice : MonoBehaviour
     {
         GameObject fruitParticle = Instantiate(fruitSliceParticleSystem, this.gameObject.transform.GetChild(0).transform);
 
+        CameraShakerHandler.Shake(MyShake);
 
         ParticleSystem.MainModule psmain = fruitParticle.transform.GetChild(2).gameObject.GetComponent<ParticleSystem>().main;
 

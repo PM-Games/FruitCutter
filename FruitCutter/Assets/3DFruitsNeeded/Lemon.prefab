@@ -40,7 +40,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: c7babd0d9f849c9449d1c29e86f6245f, type: 3}
       propertyPath: m_Name
-      value: Lemon
+      value: lemon
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c7babd0d9f849c9449d1c29e86f6245f, type: 3}
       propertyPath: m_RootOrder
@@ -48,7 +48,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c7babd0d9f849c9449d1c29e86f6245f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.91
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c7babd0d9f849c9449d1c29e86f6245f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -125,3 +125,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fruitSliceParticleSystem: {fileID: 8269044994159673800, guid: 6d2857fdecd157f42ac23f1fe7e23f19, type: 3}
   colorOfFruit: Yellow
+  MyShake: {fileID: 11400000, guid: 42477bfe4d5362047955aa766729ddb8, type: 2}

@@ -40,7 +40,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: dc898d7128c93c34b8a99b201a7532d0, type: 3}
       propertyPath: m_Name
-      value: Onion
+      value: onion
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dc898d7128c93c34b8a99b201a7532d0, type: 3}
       propertyPath: m_RootOrder
@@ -48,7 +48,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dc898d7128c93c34b8a99b201a7532d0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.91
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dc898d7128c93c34b8a99b201a7532d0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -125,3 +125,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fruitSliceParticleSystem: {fileID: 8269044994159673800, guid: 6d2857fdecd157f42ac23f1fe7e23f19, type: 3}
   colorOfFruit: Orange
+  MyShake: {fileID: 11400000, guid: 42477bfe4d5362047955aa766729ddb8, type: 2}
