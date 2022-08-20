@@ -1,14 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FirstGearGames.SmoothCameraShaker;
 
 public class ProcessSlice : MonoBehaviour
 {
     public GameObject fruitSliceParticleSystem;
-    //public ParticleSystem fruitSliceBigSmoke;
-    //public ParticleSystem fruitSliceGlowSmoke;
-    //public ParticleSystem fruitSliceEmberTrail;
     public string colorOfFruit;
+    public ShakeData MyShake;
 
     // Start is called before the first frame update
     void Start()
@@ -51,7 +50,7 @@ public class ProcessSlice : MonoBehaviour
         }
         if (colorOfFruit == "Orange")
         {
-            psmain.startColor = new Color(255, 163, 0, 255);
+            psmain.startColor = new Color(255, 83, 0, 255);
         }
         if (colorOfFruit == "Green")
         {
