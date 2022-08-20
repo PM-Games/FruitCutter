@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TrailRaycast : MonoBehaviour
 {
-    public Camera camera;
+    Camera camera;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,13 +14,13 @@ public class TrailRaycast : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.DrawRay(camera.ScreenPointToRay(Input.mousePosition), Color.red);
+        Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+
         if (Input.GetKey(KeyCode.Mouse0))
         {
             Debug.Log("Has Clicked mouse button");
             Debug.Log(Input.mousePosition);
-
-            Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+            
 
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
@@ -30,7 +30,7 @@ public class TrailRaycast : MonoBehaviour
                     Debug.Log("You should have hit something with a collider");
                 }
                 Debug.Log("Raycast position is: " + Input.mousePosition);
-                hit.collider.gameObject.GetComponent<ProcessSlice>().DestroyFruit();
+                hit.collider.gameObject.GetComponent<ProcessSlice>()?.DestroyFruit();
             }
         }
     }

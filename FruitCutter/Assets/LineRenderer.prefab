@@ -154,3 +154,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 0}
+  normalTrail: {fileID: 2100000, guid: 23edaa465d6f30d4493698d63c9d3cfe, type: 2}
+  onFruitTrail: {fileID: 2100000, guid: a8297129059ca2f43b60400bc69a7d43, type: 2}
