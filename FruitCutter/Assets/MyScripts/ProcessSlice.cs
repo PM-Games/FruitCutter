@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using FirstGearGames.SmoothCameraShaker;
 
@@ -8,6 +9,7 @@ public class ProcessSlice : MonoBehaviour
     public GameObject fruitSliceParticleSystem;
     public string colorOfFruit;
     public ShakeData MyShake;
+
 
     // Start is called before the first frame update
     void Start()

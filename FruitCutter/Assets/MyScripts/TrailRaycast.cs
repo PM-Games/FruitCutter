@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class TrailRaycast : MonoBehaviour
 {
     Camera camera;
+
+    int scoreAmount;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +17,8 @@ public class TrailRaycast : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        PlayerPrefs.SetInt("FreePlayPlayerScore", scoreAmount);
+
         Ray ray = camera.ScreenPointToRay(Input.mousePosition);
 
         if (Input.GetKey(KeyCode.Mouse0))
@@ -28,6 +33,9 @@ public class TrailRaycast : MonoBehaviour
                 if (hit.collider == true)
                 {
                     Debug.Log("You should have hit something with a collider");
+                    scoreAmount++;
+                    TMP_Text scoreText = GameObject.Find("ScoreText").GetComponent<TMP_Text>();
+                    scoreText.text = scoreAmount.ToString();
                 }
                 Debug.Log("Raycast position is: " + Input.mousePosition);
                 hit.collider.gameObject.GetComponent<ProcessSlice>()?.DestroyFruit();
