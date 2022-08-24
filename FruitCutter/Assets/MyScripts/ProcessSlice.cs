@@ -30,7 +30,7 @@ public class ProcessSlice : MonoBehaviour
         CameraShakerHandler.Shake(MyShake);
 
         //CHANGE LATER
-        this.gameObject.SetActive(false);
+        //this.gameObject.SetActive(false);
         //CHANGE LATER
 
         ParticleSystem.MainModule psmain = fruitParticle.transform.GetChild(2).gameObject.GetComponent<ParticleSystem>().main;
